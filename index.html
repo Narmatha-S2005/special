@@ -211,11 +211,11 @@ function typeText(el,text,callback){
   }
   type();
 }
-/* start */
 function start(){
-  document.getElementById("song").play();
   song.play().catch(()=>{});
+
   if(navigator.vibrate) navigator.vibrate(100);
+
   switchScreen(0,1);
   showWishes();
   hearts();
